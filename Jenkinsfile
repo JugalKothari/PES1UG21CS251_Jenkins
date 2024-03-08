@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Print output of the compiled .cpp file
-                    sh './my_executable'
+                    sh './my_execute'
                 }
             }
         }
