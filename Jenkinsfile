@@ -26,6 +26,15 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy'){
+            steps {
+                script {
+                    sh 'mvn deploy'
+                    echo 'Deploy successful'
+                }
+            }
+        }
     }
 
     post {
